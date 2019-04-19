@@ -3,10 +3,13 @@
  * 
  * Joystick routines to handle arcade to usb conversion
  * 
- * Written & released in 2019 by M.F. Wieland (TSB)
+ * Version 1.1
+ * Release date: 2019-04-19
  * 
- * This work is licensed under the terms of the MIT license.  
- * For a copy, see <https://opensource.org/licenses/MIT>.
+ * Written & released by M.F. Wieland (TSB)
+ * 
+ * This is free and unencumbered software released into the public domain.
+ * See the file LICENSE for more details, or visit <http://unlicense.org>.
  */
 
 #ifndef JOYSTICK_h
