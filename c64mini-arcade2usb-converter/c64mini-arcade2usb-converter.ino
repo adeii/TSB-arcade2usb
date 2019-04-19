@@ -21,10 +21,10 @@ const int pin_joystick_left = 4;
 const int pin_joystick_right = 5;
 const int pin_joystick_button1 = 6;
 
-const int pin_joystick_button_option1 = 7;
-const int pin_joystick_button_option2 = 8;
-const int pin_joystick_button_option3 = 9;
-const int pin_joystick_button_option4 = 10;
+const int pin_joystick_button_menu = 7;
+const int pin_joystick_button_a = 8;
+const int pin_joystick_button_b = 9;
+const int pin_joystick_button_c = 10;
 
 
 int debounceDelay = 1; // debounce delay
@@ -37,10 +37,10 @@ void setup() {
   pinMode(pin_joystick_left, INPUT_PULLUP);       
   pinMode(pin_joystick_right, INPUT_PULLUP);       
   pinMode(pin_joystick_button1, INPUT_PULLUP);       
-  pinMode(pin_joystick_button_option1, INPUT_PULLUP);       
-  pinMode(pin_joystick_button_option2, INPUT_PULLUP);       
-  pinMode(pin_joystick_button_option3, INPUT_PULLUP);       
-  pinMode(pin_joystick_button_option4, INPUT_PULLUP);       
+  pinMode(pin_joystick_button_menu, INPUT_PULLUP);       
+  pinMode(pin_joystick_button_a, INPUT_PULLUP);       
+  pinMode(pin_joystick_button_b, INPUT_PULLUP);       
+  pinMode(pin_joystick_button_c, INPUT_PULLUP);       
 }
 
 void loop() {
@@ -56,28 +56,28 @@ void loop() {
   }
   
   // Button - Menu
-  if (digitalRead(pin_joystick_button_option1) == LOW) {
+  if (digitalRead(pin_joystick_button_menu) == LOW) {
     
     Joystick.button_press(0x0200);
     // see documentation to use other device
   }
 
   // Button - C
-  if (digitalRead(pin_joystick_button_option2) == LOW) {
+  if (digitalRead(pin_joystick_button_a) == LOW) {
     
     Joystick.button_press(0x0100);
     // see documentation to use other device
   }
   
   // Button - B (not in use at this moment)
-  if (digitalRead(pin_joystick_button_option3) == LOW) {
+  if (digitalRead(pin_joystick_button_b) == LOW) {
     
     Joystick.button_press(0x2);
     // see documentation to use other device
   }
 
   // Button - A
-  if (digitalRead(pin_joystick_button_option4) == LOW) {
+  if (digitalRead(pin_joystick_button_c) == LOW) {
     
     Joystick.button_press(0x4);
     // see documentation to use other device
